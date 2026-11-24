@@ -1,0 +1,57 @@
+<div class="container">
+  <div class="card bg-dark text-light shadow border-secondary">
+    <div class="card-header bg-secondary text-white">
+      <h4 class="mb-0">Registrar Pixar</h4>
+    </div>
+
+    <div class="card-body">
+      <form #form="ngForm">
+        <div class="mb-3">
+          <label class="form-label">Ingresa ID:</label>
+          <input
+            type="number"
+            class="form-control bg-dark text-light border-secondary"
+            #inputid
+            placeholder="Introduce el ID"
+          />
+        </div>
+
+        <div class="mb-3">
+          <label class="form-label">Ingresa Nombre:</label>
+          <input
+            type="text"
+            class="form-control bg-dark text-light border-secondary"
+            #inputname
+            placeholder="Introduce el nombre"
+          />
+        </div>
+
+        <div class="mb-3">
+          <label class="form-label">Ingresa Imagen:</label>
+          <input
+            type="text"
+            class="form-control bg-dark text-light border-secondary"
+            #inputimg
+            placeholder="Introduce la imagen"
+          />
+        </div>
+
+        <div class="mb-3">
+          <label class="form-label">Ingresa Película:</label>
+          <input
+            type="text"
+            class="form-control bg-dark text-light border-secondary"
+            #inputmovie
+            placeholder="Introduce la película"
+          />
+        </div>
+
+        <div class="d-grid">
+          <button type="button" class="btn btn-success" (click)="createPixarAsync()">
+            Guardar Pixar
+          </button>
+        </div>
+      </form>
+    </div>
+  </div>
+</div>
